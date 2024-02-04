@@ -1,0 +1,10 @@
+.popular {
+    padding: 88px 0;
+    background-color: #ECECEC;
+    @media only screen and (max-width: 680px) {
+        padding: 40px 0;
+    }
+    .product__item {
+        background-color: #fff;
+    }
+}

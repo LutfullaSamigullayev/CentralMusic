@@ -1,0 +1,46 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1304px;
+    margin: 0 auto;
+    padding: 0 20px;    
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 1 auto;
+}
+.title {
+    color: #505050;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    @media only screen and (max-width: 376px) {
+        font-size: 24px;
+    }
+    
+    &::before {
+        content: ' ';
+        width: 80px;
+        border: 3px solid #AB0433;
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        margin-left: -40px;
+    }
+
+}

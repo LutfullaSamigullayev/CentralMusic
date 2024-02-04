@@ -1,0 +1,202 @@
+.header {
+    background-image: url(/./img/header/header_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 56px;
+
+    @media only screen and (max-width: 1024px) {
+        padding-top: 63px;
+    }
+    @media only screen and (max-width: 376px) {
+        padding-top: 58px;
+    }
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__left {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        
+        .menu {
+            @media only screen and (max-width: 1024px) {
+                display: none;
+            }
+            .item {
+                padding: 16px;
+                text-decoration: none;
+                color: #FCFCFC;
+                font-size: 18px;
+                font-weight: 600;
+                
+                &:hover {
+                    color: #AB0433;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+    }
+
+    &__logo {
+        
+        &:hover {
+            cursor: pointer;
+
+        }
+    }
+    &__right {
+        .svg {
+            display: flex;
+            @media only screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+        .burger {
+            display: none;
+            flex-direction: column;
+            row-gap: 8px;
+            padding: 4px;
+            background-color: transparent;
+            border: none;
+
+            @media only screen and (max-width: 1024px) {
+                display: flex;
+            }
+        }
+        .burger__line {
+            width: 24px;
+            height: 3px;
+            background-color: #fff;
+        }
+    }
+}
+.header__center {
+    width: 580px;
+    height: 700px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 64px;
+
+    @media only screen and (max-width: 1024px) {
+        width: 475px;
+        height: 561px;
+        padding: 0;
+        align-items: center;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 376px;
+        height: 400px;
+        
+    }
+    @media only screen and (max-width: 376px) {
+        width: 312px;
+        height: 334px;
+        justify-content: center;
+    }
+    
+    p {
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+
+    @media only screen and (max-width: 376px) {
+        font-size: 32px;
+        text-align: center;
+    }
+    }
+}
+.header__bottom {
+    flex: 1 1 auto;
+    width: 100%;
+    // height: 280px;
+    background-image:
+    linear-gradient(rgba(171, 4, 51, 0.8), rgba(171, 4, 51, 0.8)),
+    url('/./img/header/red-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    color: #fff;
+    transform: translateY(50%);
+    border-radius: 10px;
+    padding: 50px;
+
+    @media only screen and (max-width: 1024px) {
+        padding: 40px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding: 30px;
+    }
+        @media only screen and (max-width: 376px) {
+        padding: 18px;
+    }
+
+    .box {
+        width: 44%;
+        
+        @media only screen and (max-width: 1024px) {
+            width: 60%;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 70%;
+        }
+         @media only screen and (max-width: 376px) {
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 46px;
+            
+            @media only screen and (max-width: 768px) {
+                font-size: 32px;
+            }
+            @media only screen and (max-width: 376px) {
+                font-size: 24px;
+            }
+        }
+        p {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            @media only screen and (max-width: 1024px) {
+                line-height: normal;
+                
+            }
+            @media only screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+            @media only screen and (max-width: 376px) {
+                font-size: 10px;
+            }
+        }
+    }
+    .button {
+        padding: 8px 16px;
+        border-radius: 32px;
+        color: #fff;
+        background-color: #FF753A;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        &:hover {
+            cursor: pointer;
+            color: #000;
+            transition: 0.3s;
+        }
+    }
+}

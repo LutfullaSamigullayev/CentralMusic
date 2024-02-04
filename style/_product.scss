@@ -1,0 +1,106 @@
+.product {
+    padding-top: 224px;
+    padding-bottom: 86px;
+
+    @media only screen and (max-width: 680px) {
+        padding-top: 150px;
+        padding-bottom: 40px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__menu {
+        display: flex;
+        gap:32px;
+        margin-top: 26px;
+        flex-wrap: wrap;
+        
+    }
+    
+    &__item {
+        flex: 0 1 calc(32.9% - 16px);
+        box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(28, 5, 77, 0.10);
+        border-radius: 10px;
+        @media only screen and (max-width: 1280px) {
+            flex: 0 1 calc(32.8% - 16px);
+        }
+        @media only screen and (max-width: 1050px) {
+            flex: 0 1 calc(50% - 16px)
+        }
+        @media only screen and (max-width: 680px) {
+            flex: 0 1 100%;
+        }
+        &.none {
+            display: none;
+            @media only screen and (max-width: 1050px) {
+                display: block;
+            }
+        }
+    }
+    &__img {
+        border-radius: 10px 10px 0px 0px;  
+        
+        .bg-color {
+            background: radial-gradient(138.81% 138.29% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
+        }
+        
+        div {
+            display: flex;
+            justify-content: center;
+            border-radius: 10px 10px 0px 0px;  
+            height: 252px;
+            img {
+                transform: translateY(-24px);
+            }
+
+        }
+    }
+    &__name {
+        padding: 16px 24px 24px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        div {
+            display: flex;
+            color: #252525;
+            justify-content: space-between;
+        }
+    }
+    &__brend {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &__price {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: right;
+    }
+    &__description {
+        p {
+            color: #767676;
+            margin-bottom: 2ex;
+            font-weight: 500;
+        }
+    }
+    &__colors {
+        
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            color: #505050;
+            border-radius: 20px;
+            padding: 2px 6px;
+            border: 1px solid #EAEAEA;
+        }
+    }
+}
+
+
+
+
+
+

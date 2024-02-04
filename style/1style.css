@@ -1,0 +1,180 @@
+
+
+
+
+
+/* ----------------------HEADER START-------------------------- */
+
+/* ----------------------HEADER END---------------------------- */
+
+/* ----------------------NEW-PRODUCTS START---------------------------- */
+.new-products {
+    height: 794px;
+    padding-top: 224px;
+}
+
+
+.top__border {
+    width: 80px;
+    height: 3px;
+    background-color: #AB0433;
+}
+.products__box h2 {
+    font-size: 40px;
+    color: #505050;
+}
+.products__box--menu {
+    width: 100%;
+    display: flex;
+    gap:32px;
+    margin-top: 26px;
+}
+.products__box--content {
+    width: 400px;
+    border-radius: 10px;
+    
+}
+.product__box--content-div {
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(28, 5, 77, 0.10);
+    border-radius: 10px;
+}
+/* .products__content--img {
+    position: relative;
+} */
+.img-rectangle {
+    height: 252px;
+    border-radius: 10px 10px 0px 0px;
+}
+.img-rectangle--background {
+    background: radial-gradient(138.81% 138.29% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
+}
+.img-rectangle img {
+    position: relative;
+    top: -20px;
+    left: 42px;
+}
+
+.brend__name {
+    width: 280px;
+    
+}
+.brend__price {
+    width: 72px;
+    
+}
+.brend__description {
+    width: 352px;
+    min-height: 42px;
+    
+}
+
+
+/* ----------------------NEW-PRODUCTS END---------------------------- */
+
+/* ----------------------POPULAR-FINDS START---------------------------- */
+.popular-finds {
+    padding: 88px 0;
+    background: #ECECEC;  
+}
+.product__box-content--white {
+    background-color: #fff;
+}
+/* ----------------------POPULAR-FINDS END---------------------------- */
+
+/* ----------------------GEAR START---------------------------- */
+.gear {
+    padding: 80px 0 90px 0;
+}
+.title {
+    color:#505050;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    padding-top: 8px;
+}
+.title::before {
+    content:' ';
+    width: 80px;
+    height: 3px;
+    background: #AB0433;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -40px;
+}
+.gear__columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 32px;
+}
+.gear__title {
+    /* margin-top: 80px; */
+                         /*--------margin ishlatgan yaxshimi paddingmi  */
+    flex: 0 0 100%;
+}
+.gear__items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #252525;
+    color: #fff;
+    overflow: hidden;
+    flex: 0 0 31.63%;
+}
+.gear__items:nth-child(odd) {
+    background-color: #EAEAEA;
+    color: #000;
+
+}
+.gear__items:nth-child(odd) .item__title p {
+    color: #767676;
+}
+.gear__items:nth-child(odd) .item__title h3 {
+    color: #202020;
+}
+.gear__items:nth-child(2), .gear__items:nth-child(3) {
+    flex-basis:  48.73%;
+}
+.item__img {
+    /* width: 400px; */
+    height: 480px;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+.item__img img {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.item__title {
+    padding: 32px;
+    flex: 1 1 auto;
+}
+.item__title h3 {
+    font-size: 24px;
+}
+.item__title p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 4px;
+    color: #C4C4C4;
+}
+/* ----------------------GAER END---------------------------- */
+
+/* ----------------------FOOTER START---------------------------- */
+
+
+
+
+/* ----------------------FOOTER END---------------------------- */
+
+
+
+
+
+
